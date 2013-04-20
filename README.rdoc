@@ -1,0 +1,5 @@
+minimum viable product for internal company use
+
+Problem: Customer service reps do not know who is around, who is out for lunch, and who is not working today.
+
+Solution: Create an in/out board. Should be able to create a new account (with password). Should be able to log in. When logged in, should be able to see everyone else's status. When logged in, should be able to set your own status.
