@@ -1,0 +1,11 @@
+%h1
+  Clock In/Out 
+
+#input-status
+  = render 'form', :status => Status.new
+
+#status-list
+  %h1
+    Everyone's Statuses:
+  %ul
+    = render @statuses
