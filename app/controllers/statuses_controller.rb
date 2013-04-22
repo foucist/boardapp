@@ -2,7 +2,7 @@ class StatusesController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @statuses = User.all.map {|x| x.statuses.first}.compact
+    @statuses = User.all.map {|x| x.statuses.last}.compact
   end
 
   def new
@@ -10,6 +10,7 @@ class StatusesController < ApplicationController
   end
 
   def create
+    params[:status][:entry] = params[:commit] if Status.list.include?(params[:commit])
     @status = current_user.statuses.new(params[:status])
 
     respond_to do |format|
