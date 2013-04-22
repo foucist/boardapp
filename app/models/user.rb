@@ -10,4 +10,14 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   
   has_many :statuses
+
+  def current_status
+    # reset everyone's status at midnight # next step would be to keep some statuses regardless
+    if todays_status = Status.where("user_id = ?", self.id).where(:created_at => Time.now.midnight..Time.now).order("created_at DESC").limit(1).first
+      todays_status
+    else
+      self.statuses.create(:entry => "Unknown")
+    end
+  end
+
 end

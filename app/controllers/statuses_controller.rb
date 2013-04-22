@@ -2,7 +2,7 @@ class StatusesController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @statuses = User.all.map {|x| x.statuses.last}.compact
+    @statuses = User.all.map {|x| x.current_status}.sort_by(&:created_at)
   end
 
   def new
