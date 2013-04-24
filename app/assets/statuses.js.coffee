@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $(document).ready ->
   $(".new_status").on("ajax:success", (e, data, status, xhr) ->
-    $("ul.status_list").replaceWith "<ul class='status_list'>" + xhr.responseText + "</ul>"
+    $(".status_list").append xhr.responseText
     $("#status_entry").val("")
     container = $('.statuses')
     scrollTo = $('.status_list ul li:last')

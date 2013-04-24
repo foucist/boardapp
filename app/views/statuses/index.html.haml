@@ -4,8 +4,8 @@
 #input-status
   = render 'form', :status => Status.new
 
-#status-list
+%div
   %h1
     Everyone's Current Status:
-  %ul
+  %ul.status_list
     = render @statuses

@@ -1,6 +1,6 @@
 #add_status
-  = form_for(status) do |f|
+  = form_for(status, :remote => true) do |f|
     - Status.list.each do |status|
       = f.submit status
-    = f.text_field :entry, :placeholder => "What's your status?"
+    = f.text_field :entry, :placeholder => "What's your status?", :autofocus => true
     = f.submit 'Submit'
