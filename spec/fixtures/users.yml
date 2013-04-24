@@ -1,0 +1,52 @@
+---
+users_001:
+  id: 1
+  email: silver@example.com
+  encrypted_password: $2a$10$bja9rY/lt0zMT7Cp7GG1h.YzuOH.tXHuoASLklXdjHwRLTqcG5wNK
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  status_id: 
+  thumbnail_url: 
+  created_at: '2013-04-24 18:45:14.952788'
+  updated_at: '2013-04-24 18:45:14.952788'
+  name: Joe Silver
+users_002:
+  id: 2
+  email: gold@example.com
+  encrypted_password: $2a$10$GVTyG8FjDBcfO9DcH6LJ6.hgdAWkp.IB8Kn9wLg.VpnKwbZ67CspG
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  status_id: 
+  thumbnail_url: 
+  created_at: '2013-04-24 18:45:15.114784'
+  updated_at: '2013-04-24 18:45:15.114784'
+  name: Sarah Gold
+users_003:
+  id: 3
+  email: platinum@example.com
+  encrypted_password: $2a$10$7OsA4GG2TxO3.pNrPIhSNelYaBc1DHJFVWAqF0GGyhfJ6sgWp198K
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  status_id: 
+  thumbnail_url: 
+  created_at: '2013-04-24 18:45:15.205693'
+  updated_at: '2013-04-24 18:45:15.205693'
+  name: Bob Platinum
