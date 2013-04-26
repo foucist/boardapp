@@ -1,3 +1,7 @@
 %li.entry
-  %strong= status.user.name + " is: "
-  %span= status.entry
+  %span.name
+    %strong= status.user.name + " is: "
+  %span.status
+    = status.entry
+  %span.timestamp
+    %em= "As of " + time_ago_in_words(status.created_at) + " ago." unless status.entry == "Unknown"
